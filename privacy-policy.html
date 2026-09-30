@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+if (
+  sessionStorage.getItem(
+    "smartstart_access"
+  ) !== "granted"
+) {
+  window.location.href = "index.html";
+}
+</script>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet" />
+  <title>Privacy Policy — SMARTSTART</title>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="navbar">
+      <a class="brand" href="home.html">
+        <img src="assets/images/smartstart-logo.jpg" alt="SmartStart logo">
+        <span>SmartStart</span>
+      </a>
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false"
+        onclick="const m=document.querySelector('.nav-links');const open=m.classList.toggle('open');this.setAttribute('aria-expanded', open ? 'true' : 'false');">☰</button>
+      <nav class="nav-links" aria-label="Main">
+        <a href="home.html" aria-current="page">Home</a>
+        <a href="class-essentials.html">Course Guide</a>
+        <a href="timetable-and-calendar.html">Timetable &amp; Calendar</a>
+        <a href="payment-information.html">Payment information</a>
+        <a href="courses-of-interest.html">Other Independent Tutors</a>
+        <a class="cta-btn" href="contact-us.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container policy-page">
+      <header class="page-head">
+        <h1>Privacy Policy</h1>
+        <p class="subtext">Last updated: 2026</p>
+      </header>
+
+      <div class="card policy-card">
+        <h2>Who we are</h2>
+        <p>SmartStart is a home-education tutoring service run by Ben Mottershead. You can contact us via WhatsApp on the <a href="contact-us.html">Contact page</a>.</p>
+
+        <h2>What data we collect</h2>
+        <p>This website does not collect any personal data through forms, cookies, or tracking tools. We do not use Google Analytics or any other analytics service.</p>
+        <p>If you contact us via WhatsApp, any information you share is handled through WhatsApp's own platform and privacy policy.</p>
+
+        <h2>Cookies</h2>
+        <p>This website does not use cookies or any local storage to track you.</p>
+
+        <h2>Third-party links</h2>
+        <p>Our site contains links to external websites (such as Amazon and Gov.uk). We are not responsible for the privacy practices of those sites.</p>
+
+        <h2>Your rights</h2>
+        <p>As we collect no personal data through this website, there is nothing to access, correct, or delete. If you have any questions, contact us via the <a href="contact-us.html">Contact page</a>.</p>
+
+        <h2>Lesson recordings</h2>
+        <p>All lessons are recorded, by attending these zoom lessons you are agreeing for your child to be recorded, only to be shared privately to the private WhatsApp group that is controlled and monitored regularly. The recordings are strictly limited to active class members only and are not allowed to be shared. Cameras are not enforced, only encouraged.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>We may update this policy occasionally. Any changes will be reflected on this page.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <a class="footer-brand" href="home.html">
+          <img src="assets/images/smartstart-logo.jpg" alt="SmartStart logo">
+          <span>SmartStart</span>
+        </a>
+        <p class="footer-text">Personalised home education—live classes and guided coursework to fit your family.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="class-essentials.html">Age Groups & Subjects explained</a></li>
+          <li><a href="timetable-and-calendar.html">Timetable &amp; Calendar</a></li>
+          <li><a href="courses-of-interest.html">Courses of Interest</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <ul>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div>© <span id="year"></span> SMARTSTART</div>
+        <nav aria-label="Legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

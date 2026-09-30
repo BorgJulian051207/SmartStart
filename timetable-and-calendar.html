@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+if (
+  sessionStorage.getItem(
+    "smartstart_access"
+  ) !== "granted"
+) {
+  window.location.href = "index.html";
+}
+</script>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet" />
+  <title>SMARTSTART — Timetable & Calendar</title>
+</head>
+<body>
+
+  <!-- Header (keep your existing one) -->
+  <header class="site-header">
+    <div class="navbar">
+      <a class="brand" href="home.html">
+        <img src="assets/images/smartstart-logo.jpg" alt="SmartStart logo">
+        <span>SmartStart</span>
+      </a>
+
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false"
+        onclick="
+          const m=document.querySelector('.nav-links');
+          const open=m.classList.toggle('open');
+          this.setAttribute('aria-expanded', open ? 'true' : 'false');
+        ">☰</button>
+
+      <nav class="nav-links" aria-label="Main">
+        <a href="home.html" aria-current="page">Home</a>
+        <a href="class-essentials.html">Course Guide</a>
+        <a href="timetable-and-calendar.html">Timetable &amp; Calendar</a>
+        <a href="payment-information.html">Payment information</a>
+        <a href="courses-of-interest.html">Other Independent Tutors</a>
+        <a class="cta-btn" href="contact-us.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+
+      <header class="page-head">
+        <h1>Timetable & Calendar</h1>
+        <p class="subtext">
+          <strong>Note:</strong> KS3 &amp; KS4 Maths have multiple classes per week. They are at alternate chapters in the
+course, therefore it is possible for a student to attend more than 1 weekly lesson, if desired.
+          <br>
+          <strong>IMPORTANT</strong> Please make sure to scroll to the right if viewing from a smaller device to see the full schedule.
+        </p>
+      </header>
+
+      <div style="margin-bottom:1rem;">
+        <a href="assets/images/timetable.pdf" download class="cta-btn" style="display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Timetable
+        </a>
+      </div>
+
+      <!-- Timetable (edit cells directly) -->
+      <div class="card table-scroll">
+        <table class="table timetable-table">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>09:15</th>
+              <td><span class="pill pill-fsm">Functional Skills Maths (Entry Level 3)</span></td>
+              <td>—</td>
+              <td><span class="pill pill-ks4">KS4 Maths Foundation</span></td>
+            </tr>
+            <tr>
+              <th>10:10</th>
+              <td><span class="pill pill-ks3">KS3 Maths Foundation</span></td>
+              <td><span class="pill pill-fsm">Functional Skills Maths (L2)</span></td>
+              <td><span class="pill pill-guitar">Guitar Lesson</span></td>
+            </tr>
+            <tr>
+              <th>11:05</th>
+              <td><span class="pill pill-env">Environmental Studies</span></td>
+              <td><span class="pill pill-ks3">KS3 Maths Foundation
+              </span></td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <th>12:00</th>
+              <td><span class="pill pill-fsm">Functional Skills Maths (L1)</span></td>
+              <td><span class="pill pill-ks4">KS4 Maths Foundation</span></td>
+              <td><span class="pill pill-pe">P.E.</span></td>
+
+            </tr>
+            <tr>
+              <th>13:30</th>
+              <td>—</td>
+              <td><span class="pill pill-guitar">Guitar Lesson</span></td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <th>14:15</th>
+              <td>—</td>
+              <td><span class="pill pill-ks3">KS3 Maths HIGHER</span></td>
+              <td><span class="pill pill-admin">Admin &amp; IT</span></td>
+            </tr>
+            <tr>
+              <th>15:15</th>
+              <td>—</td>
+              <td>—</td>
+              <td><span class="pill pill-ks4">KS4 Maths HIGHER</span></td>
+            </tr>
+            <tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Legend (optional) -->
+      <aside class="legend card" style="margin-top:1.25rem;">
+        <h3 class="h3">Legend</h3>
+        <ul>
+          <li><span class="pill pill-fsm">Functional Skills Maths</span></li>
+          <li><span class="pill pill-ks3">KS3 Maths</span></li>
+          <li><span class="pill pill-ks4">KS4 Maths</span></li>
+          <li><span class="pill pill-env">Environmental Studies</span></li>
+          <li><span class="pill pill-pe">P.E.</span></li>
+          <li><span class="pill pill-guitar">Guitar</span></li>
+          <li><span class="pill pill-admin">Admin &amp; IT</span></li>
+        </ul>
+      </aside>
+
+      <!-- Fees / Term schedule (edit rows directly) -->
+      <section class="card" style="margin-top:1.25rem">
+      <header class="page-head">
+        <h2 class="h2">2026/27 Term Schedule</h2>
+          <p class="subtext">
+            <strong>IMPORTANT</strong> Please make sure to scroll to the right if viewing from a smaller device to see the full scheduale.
+          </p>
+      </header>
+        <div class="table-scroll">
+          <table class="table fees-table">
+            <thead>
+              <tr>
+                <th>Term Schedule</th>
+                <th>Number of lessons</th>
+                <th>Example cost:<br>(£3 x 1 lesson a week)</br></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="term">
+                <td>Autumn Term (1st Half) &nbsp; 31/08–09/10</td>
+                <td>6</td>
+                <td>£18</td>
+              </tr>
+              <tr class="holiday">
+                <td>Autumn Half term &nbsp; 12/10–16/10</td>
+                <td>—</td><td>—</td>
+              </tr>
+              <tr class="term">
+                <td>Autumn Term (2nd Half) &nbsp; 19/10–18/12</td>
+                <td>9</td>
+                <td>£27</td>
+              </tr>
+              <tr class="holiday">
+                <td>Christmas Break &nbsp; 21/12–01/01</td>
+                <td>—</td><td>—</td>
+              </tr>
+              <tr class="term">
+                <td>Spring Term (1st Half) &nbsp; 04/01–12/02</td>
+                <td>6</td>
+                <td>£18</td>
+              </tr>
+              <tr class="holiday">
+                <td>Spring Half Term &nbsp; 15/02–19/02</td>
+                <td>—</td><td>—</td>
+              </tr>
+              <tr class="term">
+                <td>Spring Term (2nd Half) &nbsp; 22/02–26/03</td>
+                <td>5</td>
+                <td>£15</td>
+              </tr>
+              <tr class="holiday">
+                <td>Easter Break &nbsp; 29/03–09/04</td>
+                <td>—</td><td>—</td>
+              </tr>
+              <tr class="term">
+                <td>Summer Term (1st Half) &nbsp; 12/04–21/05</td>
+                <td>6</td>
+                <td>£18</td>
+              </tr>
+              <tr class="holiday">
+                <td>Summer Half Term &nbsp; 24/05–28/05</td>
+                <td>—</td><td>—</td>
+              </tr>
+              <tr class="term">
+                <td>Summer Term (2nd Half) &nbsp; 31/05–16/07</td>
+                <td>7</td>
+                <td>£21</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="subtext" style="margin-top:.75rem">
+          <strong>Please note:</strong> Dates vary by tutor—check updates regularly.
+        </p>
+      </section>
+
+
+
+    </div>
+  </main>
+
+  <!-- Your existing footer -->
+  <footer class="site-footer">
+    
+    <div class="footer-inner">
+
+    <!-- Brand / blurb -->
+    <div>
+      <a class="footer-brand" href="home.html">
+        <img src="assets/images/smartstart-logo.jpg" alt="SmartStart logo">
+        <span>SmartStart</span>
+      </a>
+      <p class="footer-text">
+        Personalised home education—live classes and guided coursework to fit your family.
+      </p>
+    </div>
+
+    <!-- Explore -->
+    <div>
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="class-essentials.html">Course Guide</a></li>
+        <li><a href="timetable-and-calendar.html">Timetable &amp; Calendar</a></li>
+        <li><a href="courses-of-interest.html">Other Independent Tutors</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div>
+      <h3>Support</h3>
+      <ul>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+
+      </ul>
+    </div>
+
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <div>© <span id="year"></span> SMARTSTART</div>
+      <nav aria-label="Legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+  
+
+  <script>
+    // Year in footer if you use the same footer as other pages
+    const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

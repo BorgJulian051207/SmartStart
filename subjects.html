@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+if (
+  sessionStorage.getItem(
+    "smartstart_access"
+  ) !== "granted"
+) {
+  window.location.href = "index.html";
+}
+</script>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet" />
+  <title>SMARTSTART</title>
+</head>
+<body>
+
+  <!-- Sticky / glassy navbar -->
+  <header class="site-header">
+    <div class="navbar">
+      <a class="brand" href="home.html">
+        <img src="assets/images/smartstart-logo.jpg" alt="SmartStart logo">
+        <span>SmartStart</span>
+      </a>
+
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false"
+        onclick="
+          const m=document.querySelector('.nav-links');
+          const open=m.classList.toggle('open');
+          this.setAttribute('aria-expanded', open ? 'true' : 'false');
+        ">☰</button>
+
+      <nav class="nav-links" aria-label="Main">
+        <a href="home.html" aria-current="page">Home</a>
+        <a href="class-essentials.html">Course Guide</a>
+        <a href="timetable-and-calendar.html">Timetable &amp; Calendar</a>
+        <a href="payment-information.html">Payment information</a>
+        <a href="courses-of-interest.html">Courses of interest</a>
+        <a class="cta-btn" href="contact-us.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <section id="subjects" class="section">
+  <div class="container">
+    <h2 style="margin-bottom:1rem;">Subjects</h2>
+    <p class="subtext" style="margin-bottom:1.25rem;">
+      group lessons with clear goals and practical outcomes. Open to homeschool learners; see workbooks for optional study support.
+    </p>
+
+    <div class="subjects-grid">
+
+      <!-- Functional Skills Maths -->
+      <article class="subject-card hover-lift">
+        <h3>Functional Skills Maths</h3>
+        <div class="tags">
+          <span class="tag">Entry L3 → Level 2</span>
+          <span class="tag">Real-world maths</span>
+        </div>
+        <p class="subtext">
+          Practical maths for everyday problems and work/college readiness.
+        </p>
+        <ul>
+          <li>Clear methods + step-by-step practice</li>
+          <li>Exam preparation for L1 &amp; L2</li>
+          <li>Confidence with numbers &amp; problem solving</li>
+        </ul>
+        <details>
+          <summary>Recommended workbooks</summary>
+          <ul>
+            <li><a href="https://www.amazon.co.uk/Functional-Skills-Maths-Entry-Level/dp/1782946349/ref=sr_1_5?crid=DA7UXOG3XC6B&dib=eyJ2IjoiMSJ9._zNXCfhsy2MS9lL7bOOs0CgsAqOci-jLEDW4yws7VKX53uENS32K_KI9Oek-U1zoMNz4x8ttc0YXWcXH-_d71A4dGDKlfuowzlAS9Rk0A7DJLsIXuSWX5NRaGFJgyeE9STykcs8kyYXJeMUXq-0-_Bb50_KtNCfMGkC8YLaQZTttp1jfR0TZdwVycC-QxWbMWwczzFczpNV3ZBc08mQkwwxMIHFbrcN18EEqm8JKlEoXCnmfEsmVtYiV0q_ZQZDc6YrLu8vbMCOYOWmeC-cSW_3ie_kopKU53yZ4yVV_Cps.34rTZIDeuqtmJbo6En2-aEfSCVFXkOjpjnVw56MU7MA&dib_tag=se&keywords=functional+skills+maths+entry+level+3&qid=1718379230&sprefix=functional+skills+maths+entry+level+3%2Caps%2C161&sr=8-5" target="_blank" rel="noopener noreferrer">Functional Skills Maths Entry Level 3 (CGP)</a></li>
+            <li><a href="https://www.amazon.co.uk/dp/B07VPWY3CV/ref=docs-os-doi_0" target="_blank" rel="noopener noreferrer">CGP Functional Skills Maths Level 1</a></li>
+            <li><a href="https://www.amazon.co.uk/New-Functional-Skills-Maths-Level-ebook/dp/B07VSRMSHS/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1700154881&sr=8-1" target="_blank" rel="noopener noreferrer">CGP Functional Skills Maths Level 2</a></li>
+            <li><a href="https://www.amazon.co.uk/Maths-Foundation-Complete-Revision-Practice/dp/0008551448/ref=sr_1_1_sspa?crid=CEXAL0EW8H8Z&dib=eyJ2IjoiMSJ9.I8pVCuMKNosusuEdFu64_7KkJV18vD9FaVMxHbpMXQ7wOyhTMn84zrxb-fD442POufdtq12DEEfbAzSUUIWXsOHQ30Rynchs_fpdA6JMSSIlC5xSuzHSDMr1A_On7OiJup0iza6o3SOIZ-wT_ScxkfLnaNL6vI6k8qdCSige3OwJyUdhwlqybAvFeWeP1jOsr9PJR7RiI9XoSxn31N2UD9ya95MYY1ycIuec7QU4_M8.c3--XotVNr9pEfPvnPaonT-nKO_UPJ_Nrz4SjpxZUiE&dib_tag=se&keywords=ks3+maths&qid=1740590308&sprefix=ks3+maths%2Caps%2C103&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" rel="noopener noreferrer">KS3 Maths All-in-One (Collins)</a></li>
+            <li><a href="https://www.amazon.co.uk/Maths-Foundation-Revision-Practice-Collins-ebook/dp/B07MXGTVYG/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1671622728&sr=8-32-spons" target="_blank" rel="noopener noreferrer">GCSE 9–1 Maths Foundation All-in-One (Collins)</a></li>
+          </ul>
+        </details>
+      </article>
+      <!-- KS3 Maths -->
+      <article class="subject-card hover-lift">
+        <h3>KS3/GCSE Maths</h3>
+        <div class="tags">
+          <span class="tag">KS3</span>
+          <span class="tag">GCSE</span>
+        </div>
+        <p class="subtext">
+          Get ready for your exams, following a step by step guide. 
+        </p>
+        <ul>
+          <li>Clear methods + step-by-step practice</li>
+        </ul>
+        <details>
+          <summary>Recommended workbooks</summary>
+          <ul>
+            <li><a href="https://www.amazon.co.uk/Maths-Foundation-Complete-Revision-Practice/dp/0008551448/ref=sr_1_1_sspa?crid=CEXAL0EW8H8Z&dib=eyJ2IjoiMSJ9.I8pVCuMKNosusuEdFu64_7KkJV18vD9FaVMxHbpMXQ7wOyhTMn84zrxb-fD442POufdtq12DEEfbAzSUUIWXsOHQ30Rynchs_fpdA6JMSSIlC5xSuzHSDMr1A_On7OiJup0iza6o3SOIZ-wT_ScxkfLnaNL6vI6k8qdCSige3OwJyUdhwlqybAvFeWeP1jOsr9PJR7RiI9XoSxn31N2UD9ya95MYY1ycIuec7QU4_M8.c3--XotVNr9pEfPvnPaonT-nKO_UPJ_Nrz4SjpxZUiE&dib_tag=se&keywords=ks3+maths&qid=1740590308&sprefix=ks3+maths%2Caps%2C103&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" rel="noopener noreferrer">KS3 Maths All-in-One (Collins)</a></li>
+            <li><a href="https://www.amazon.co.uk/Maths-Higher-Complete-Revision-Practice/dp/0008551456/ref=sr_1_2_sspa?crid=LADSYYD9JPF9&dib=eyJ2IjoiMSJ9.I8pVCuMKNosusuEdFu64_7Y5AXzo2a-4hUMo49pFJfR5NMJi1qamnR0cB0yQN5AZa2dd5jgJ7WZXPLZDjhSk58jtqQfXA5AcItpGIJjwrfzGGwrTCdW32IguX4GOybNEPoHXF7-blZxvVL3sI77XxzCNU1rt3QxyTfKFm0rTi9J5YSE3XGaOSoLFM9bx_N-bbmcVifuaftuPAU_Dp2i0REzoLJl-pNSv1sA_J2vjFko.BMIddnYYD2UQzK-eY5XkqQ1EZ0e0WljVEivTl3IOneA&dib_tag=se&keywords=ks3+maths+higher&qid=1781378114&sprefix=ks3+maths+higher%2Caps%2C185&sr=8-2-spons&aref=rMkNuH0blw&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">KS3 Maths Higher All-in-One (Collins)</a></li>
+            <li><a href="https://www.amazon.co.uk/Maths-Foundation-Revision-Practice-Collins-ebook/dp/B07MXGTVYG/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1671622728&sr=8-32-spons" target="_blank" rel="noopener noreferrer">GCSE 9–1 Maths Foundation All-in-One (Collins)</a></li>
+            
+          </ul>
+        </details>
+      </article>
+
+      <!-- Environmental Studies -->
+      <article class="subject-card hover-lift">
+        <h3>Environmental Studies</h3>
+        <div class="tags">
+          <span class="tag">KS3 → KS4/IGCSE</span>
+          <span class="tag">Human–environment</span>
+        </div>
+        <p class="subtext">
+          How people interact with the environment—science, economics, and society combined.
+        </p>
+        <ul>
+          <li>Gradual build from KS3 to exam level</li>
+          <li>Case studies &amp; real issues</li>
+        </ul>
+        <details>
+          <summary>Recommended coursebook</summary>
+          <ul>
+            <li><a href="https://www.ebooks.com/en-gb/book/detail/95754807/?affId=IE42804C&ref=interesedu-preview" target="_blank" rel="noopener noreferrer">Cambridge IGCSE &amp; O Level Environmental Management (Coursebook)</a></li>
+          </ul>
+        </details>
+      </article>
+
+      <!-- Physical Education -->
+      <article class="subject-card hover-lift">
+        <h3>Physical Education (P.E.)</h3>
+        <div class="tags">
+          <span class="tag">Theory + Practical</span>
+          <span class="tag">Health &amp; Fitness</span>
+        </div>
+        <p class="subtext">
+          Develop physical confidence and understand the body, training, and performance.
+        </p>
+        <ul>
+          <li>Anatomy &amp; physiology basics</li>
+          <li>Health, fitness &amp; training</li>
+          <li>Skill acquisition &amp; psychology</li>
+          <li>Social, cultural &amp; ethical issues</li>
+        </ul>
+        <details>
+          <summary>Recommended text</summary>
+          <ul>
+            <li><a href="https://www.amazon.co.uk/Cambridge-IGCSETM-Physical-Education-Students/dp/0008202168/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=" target="_blank" rel="noopener noreferrer">Cambridge IGCSE™ Physical Education Student's Book (Collins)</a></li>
+          </ul>
+        </details>
+      </article>
+
+      <!-- Administration & IT -->
+      <article class="subject-card hover-lift">
+        <h3>Administration &amp; IT</h3>
+        <div class="tags">
+          <span class="tag">Workplace skills</span>
+          <span class="tag">Pairs with Business</span>
+        </div>
+        <p class="subtext">
+          Practical admin, organisation, and IT skills for modern office roles.
+        </p>
+        <ul>
+          <li>Documents, spreadsheets, and task management</li>
+          <li>Professional communication &amp; organisation</li>
+        </ul>
+        <details>
+          <summary>Recommended text</summary>
+          <ul>
+            <li><a href="https://www.amazon.co.uk/gp/product/0008282102/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1" target="_blank" rel="noopener noreferrer">National 4/5 Administration and IT (Leckie Course Notes)</a></li>
+          </ul>
+        </details>
+      </article>
+
+      <!-- Guitar -->
+      <article class="subject-card hover-lift">
+        <h3>Guitar (Extracurricular)</h3>
+        <div class="tags">
+          <span class="tag">Ages 7+</span>
+          <span class="tag">Beginner friendly</span>
+        </div>
+        <p class="subtext">
+          Group lessons for first-time players or returners—chords, rhythm, and confidence.
+        </p>
+        <ul>
+          <li>Learn songs quickly with simple techniques</li>
+          <li>Build good habits and timing</li>
+        </ul>
+        <details>
+          <summary>Recommended workbook</summary>
+          <ul>
+            <li><a href="https://www.amazon.co.uk/GUITAR-OUTRIGHT-BEGINNER-step-step-ebook/dp/B08QN79XXD/ref=cm_cr_arp_d_product_top?ie=UTF8"target="_blank" rel="noopener noreferrer">Guitar for the Outright Beginner</a></li>
+          </ul>
+        </details>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <!-- Brand / blurb -->
+    <div>
+      <a class="footer-brand" href="home.html">
+        <img src="assets/images/smartstart-logo.jpg" alt="SmartStart logo">
+        <span>SmartStart</span>
+      </a>
+      <p class="footer-text">
+        Personalised home education—live classes and guided coursework to fit your family.
+      </p>
+    </div>
+
+    <!-- Explore -->
+    <div>
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="class-essentials.html">Age Groups & Subjects explained</a></li>
+        <li><a href="timetable-and-calendar.html">Timetable &amp; Calendar</a></li>
+        <li><a href="courses-of-interest.html">Courses of Interest</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div>
+      <h3>Support</h3>
+      <ul>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+
+      </ul>
+    </div>
+
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <div>© <span id="year"></span> SMARTSTART</div>
+      <nav aria-label="Legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

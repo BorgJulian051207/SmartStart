@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+if (
+    sessionStorage.getItem(
+        "smartstart_access"
+    ) !== "granted"
+) {
+    window.location.href = "index.html";
+}
+</script>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet" />
+  <title>SMARTSTART</title>
+</head>
+<body>
+
+  <!-- Sticky / glassy navbar -->
+  <header class="site-header">
+    <div class="navbar">
+      <a class="brand" href="home.html">
+        <img src="assets/images/smartstart-logo.jpg" alt="SmartStart logo">
+        <span>SmartStart</span>
+      </a>
+
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false"
+        onclick="
+          const m=document.querySelector('.nav-links');
+          const open=m.classList.toggle('open');
+          this.setAttribute('aria-expanded', open ? 'true' : 'false');
+        ">☰</button>
+
+      <nav class="nav-links" aria-label="Main">
+        <a href="home.html" aria-current="page">Home</a>
+        <a href="class-essentials.html">Course Guide</a>
+        <a href="timetable-and-calendar.html">Timetable &amp; Calendar</a>
+        <a href="payment-information.html">Payment information</a>
+        <a href="courses-of-interest.html">Other Independent Tutors</a>
+        <a class="cta-btn" href="contact-us.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+<main>
+  <section class="faq-section">
+    <div class="faq-container">
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq-group">
+        <h2>Courses</h2>
+
+        <details class="faq-item">
+          <summary>What level of functional skills is suitable for my child?</summary>
+          <p>
+            There is no set age limit for any of the 3 levels I teach. However,
+            the Entry Level 3 class is the most basic and is designed for
+            students needing help with the foundations of maths, with students
+            in the latter KS2 and early KS3 being the most common ages in that
+            class, but not limited to them. Level 1 is the next stage, followed
+            by the most advanced stage, Level 2.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>What are Admin/IT Classes about?</summary>
+          <p>
+            Admin/IT classes are a combination of IT skills and program usage,
+            such as Word, Excel, and PowerPoint, tied in with the understanding
+            of administration roles and life in a workplace.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>What age group is Admin/IT suitable for?</summary>
+          <p>
+            Admin/IT is suitable for most ages between KS3 and KS4. The material
+            can become complex at times, but I make sure to simplify it enough
+            for younger students to follow along as well.
+          </p>
+        </details>
+        
+      <div class="faq-group">
+        <h2>Access</h2>
+
+        <details class="faq-item">
+          <summary>How do I access Zoom codes?</summary>
+          <p>
+            All the Zoom details are in the WhatsApp group description.
+          </p>
+        </details>
+      </div>
+
+      <div class="faq-group">
+        <h2>Payment Questions</h2>
+
+        <details class="faq-item">
+          <summary>Where are the payment details?</summary>
+          <p>
+            There is a link on this website or on the document you have been
+            provided with when enquiring.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>How frequently should I pay?</summary>
+          <p>
+            The preferred method is per half term, but I also accept monthly
+            and weekly payments if that is easier.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>If my two children are attending the same lesson, do I pay for them both?</summary>
+          <p>
+            No. I charge per household rather than per device. This is limited
+            to family members who live in the same household.
+          </p>
+        </details>
+
+        <details class="faq-item">
+          <summary>Do I still pay if we are away or miss a lesson due to illness?</summary>
+          <p>
+            Yes. All lessons are recorded and must not be missed, as this can
+            lead to falling behind in the course.
+          </p>
+        </details>
+      </div>
+
+      <div class="faq-group">
+        <h2>Resources</h2>
+
+        <details class="faq-item">
+          <summary>Do I need to purchase the workbooks?</summary>
+          <p>
+            This is optional. I would highly recommend it for all of my maths
+            classes. However, for P.E., Admin/IT, Environmental, and Guitar,
+            workbooks are not as essential because I provide all resources
+            needed at the end of each lesson.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>    
+
+
+
+
+
+
+
+  <footer class="site-footer">
+  <div class="footer-inner">
+
+    <!-- Brand / blurb -->
+    <div>
+      <a class="footer-brand" href="home.html">
+        <img src="assets/images/smartstart-logo.jpg" alt="SmartStart logo">
+        <span>SmartStart</span>
+      </a>
+      <p class="footer-text">
+        Personalised home education—live classes and guided coursework to fit your family.
+      </p>
+    </div>
+
+    <!-- Explore -->
+    <div>
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="class-essentials.html">Age Groups & Subjects explained</a></li>
+        <li><a href="timetable-and-calendar.html">Timetable &amp; Calendar</a></li>
+        <li><a href="courses-of-interest.html">Courses of Interest</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div>
+      <h3>Support</h3>
+      <ul>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+
+      </ul>
+    </div>
+
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <div>© <span id="year"></span> SMARTSTART</div>
+      <nav aria-label="Legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+if (
+  sessionStorage.getItem(
+    "smartstart_access"
+  ) !== "granted"
+) {
+  window.location.href = "index.html";
+}
+</script>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet" />
+  <title>SMARTSTART</title>
+</head>
+<body>
+
+  <!-- Sticky / glassy navbar -->
+  <header class="site-header">
+    <div class="navbar">
+      <a class="brand" href="home.html">
+        <img src="assets/images/smartstart-logo.jpg" alt="SmartStart logo">
+        <span>SmartStart</span>
+      </a>
+
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false"
+        onclick="
+          const m=document.querySelector('.nav-links');
+          const open=m.classList.toggle('open');
+          this.setAttribute('aria-expanded', open ? 'true' : 'false');
+        ">☰</button>
+
+      <nav class="nav-links" aria-label="Main">
+        <a href="home.html" aria-current="page">Home</a>
+        <a href="class-essentials.html">Course Guide</a>
+        <a href="timetable-and-calendar.html">Timetable &amp; Calendar</a>
+        <a href="payment-information.html">Payment information</a>
+        <a href="courses-of-interest.html">Other Independent Tutors</a>
+        <a class="cta-btn" href="contact-us.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h1>Home Education, Made Simple.</h1>
+        <section class="intro">
+		  <p><strong>Hi there!</strong> Thanks for your interest in our lessons. We’re a home-education tutoring service offering small-group classes in:</p>
+		  <ul class="bullets">
+		    <li><span class="dot"></span><span>Maths</span></li>
+		    <li><span class="dot"></span><span>Environmental Studies</span></li>
+		    <li><span class="dot"></span><span>Physical Education</span></li>
+		    <li><span class="dot"></span><span>Administration &amp; IT</span></li>
+		  </ul>
+
+  		  <p><strong>Extras:</strong> Guitar lessons (beginner to intermediate).</p>
+
+		  <p>We have been teaching, coaching, and tutoring since 2016, with experience across a wide range of subjects and courses.
+		  </p>
+  </section>
+
+        <div class="actions">
+          <a class="cta-btn" href="class-essentials.html">Explore Subjects</a>
+          <a class="btn-link" href="timetable-and-calendar.html">View Timetable →</a>
+        </div>
+      </div>
+      <!-- Replace hero.jpg with any photo that fits your brand -->
+      <div class="hero-card">
+  		<img id="heroRotator" src="assets/images/smartstart-logo.jpg" alt="SmartStart logo">
+	  </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US -->
+<section id="about" class="section about">
+  <div class="container split">
+    <div>
+      <div class="kicker">About Us</div>
+      <h2>Personalised home education that fits your family.</h2>
+      <p>
+        SmartStart helps parents lead confident learning at home with
+        structured lessons, live support, and guided coursework.
+      </p>
+      <ul class="bullets">
+        <li><span class="dot"></span><span>Live lessons on all subjects</span></li>
+        <li><span class="dot"></span><span>Printable resources and exercises (provided weekly)</span></li>
+        <li><span class="dot"></span><span>Small groups with friendly, experienced tutors</span></li>
+      </ul>
+      <a class="cta-btn" href="class-essentials.html">See Our Subjects</a>
+    </div>
+
+    <!-- Replace about.jpg with one of your photos -->
+    <div class="media">
+      <img src="assets/images/ben-and-sophie.jpg" alt="Ben and Sophie learning together">
+    </div>
+  </div>
+</section>
+
+<!-- STUDENT / PARENT REVIEWS -->
+<section id="reviews" class="section reviews">
+  <div class="container">
+    <h2>What families say</h2>
+    <p class="sub">Real feedback from parents and students using SmartStart.</p>
+
+    <div class="review-wrap">
+      <div class="review-controls">
+        <button class="icon-btn" type="button" aria-label="Previous" onclick="scrollReviews(-1)">‹</button>
+        <button class="icon-btn" type="button" aria-label="Next" onclick="scrollReviews(1)">›</button>
+      </div>
+
+      <div class="review-track" id="reviewTrack">
+        <!-- Card 1 -->
+        <figure class="review-card">
+          <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+          <blockquote class="review-text">
+            “Thank you for everything, my daughter has really enjoyed the lessons as she enjoys  your teaching, thanks again!”
+          </blockquote>
+          <figcaption class="reviewer">
+          </figcaption>
+        </figure>
+
+        <!-- Card 2 -->
+        <figure class="review-card">
+          <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+          <blockquote class="review-text">
+            “My son has thoroughly enjoyed the lessons. You have definitely helped to engage him back into his learning. He's had a lot of fun.”
+          </blockquote>
+          <figcaption class="reviewer">
+          </figcaption>
+        </figure>
+
+        <!-- Card 3 -->
+        <figure class="review-card">
+          <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+          <blockquote class="review-text">
+            “Just wanted to say thank you for all the lessons and help she's had! She's really enjoyed it 😊”
+          </blockquote>
+          <figcaption class="reviewer">
+          </figcaption>
+        </figure>
+
+          <!--Card 4 -->
+          <figure class="review-card">
+          <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+          <blockquote class="review-text">
+            “We just wanted to thank you so much for all of the help that you have given our son, his confidence has increased so much since working with you”
+          </blockquote>
+          <figcaption class="reviewer">
+          </figcaption>
+          </figure>
+
+          <!--Card 5 -->
+          <figure class="review-card">
+          <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+          <blockquote class="review-text">
+            “Amazing thank you . She is gutted to leave your lessons because you've helped her so much with her maths.  She really enjoyed them 😄”
+          </blockquote>
+          <figcaption class="reviewer">
+          </figcaption>
+          </figure>
+
+          <!--Card 6 -->
+          <figure class="review-card">
+          <div class="stars" aria-label="Rated 5 out of 5">★★★★★</div>
+          <blockquote class="review-text">
+            “Hi Ben, thank you for all your hard work and effort you have put into your lessons. Our son has thoroughly enjoyed them and always looks forward to his guitar lesson. He said to say thank you from him also. Happy playing 🎸”
+          </blockquote>
+          <figcaption class="reviewer">
+          </figcaption>
+          </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  function scrollReviews(dir){
+    const track = document.getElementById('reviewTrack');
+    const card = track.querySelector('.review-card');
+    const step = card ? card.getBoundingClientRect().width + 16 : 320;
+    track.scrollBy({left: dir * step, behavior: 'smooth'});
+  }
+</script>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <!-- Brand / blurb -->
+    <div>
+      <a class="footer-brand" href="home.html">
+        <img src="assets/images/smartstart-logo.jpg" alt="SmartStart logo">
+        <span>SmartStart</span>
+      </a>
+      <p class="footer-text">
+        Personalised home education—live classes and guided coursework to fit your family.
+      </p>
+    </div>
+
+    <!-- Explore -->
+    <div>
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="class-essentials.html">Age Groups & Subjects explained</a></li>
+        <li><a href="timetable-and-calendar.html">Timetable &amp; Calendar</a></li>
+        <li><a href="courses-of-interest.html">Courses of Interest</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div>
+      <h3>Support</h3>
+      <ul>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+
+      </ul>
+    </div>
+
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <div>© <span id="year"></span> SMARTSTART</div>
+      <nav aria-label="Legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

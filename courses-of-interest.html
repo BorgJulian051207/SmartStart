@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+if (
+  sessionStorage.getItem(
+    "smartstart_access"
+  ) !== "granted"
+) {
+  window.location.href = "index.html";
+}
+</script>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet" />
+  <title>SMARTSTART</title>
+</head>
+<body>
+
+  <!-- Sticky / glassy navbar -->
+  <header class="site-header">
+    <div class="navbar">
+      <a class="brand" href="home.html">
+        <img src="assets/images/smartstart-logo.jpg" alt="SmartStart logo">
+        <span>SmartStart</span>
+      </a>
+
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false"
+        onclick="
+          const m=document.querySelector('.nav-links');
+          const open=m.classList.toggle('open');
+          this.setAttribute('aria-expanded', open ? 'true' : 'false');
+        ">☰</button>
+
+      <nav class="nav-links" aria-label="Main">
+        <a href="home.html" aria-current="page">Home</a>
+        <a href="class-essentials.html">Course Guide</a>
+        <a href="timetable-and-calendar.html">Timetable &amp; Calendar</a>
+        <a href="payment-information.html">Payment information</a>
+        <a href="courses-of-interest.html">Other Independent Tutors</a>
+        <a class="cta-btn" href="contact-us.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+<main class="section">
+  <div class="container">
+
+    <header class="page-head">
+      <h1>Featured Online Classes</h1>
+      <p class="subtext">
+        Explore live online lessons from a variety of experienced tutors and learning communities, offering both creative and curriculum-based classes.
+      </p>
+      <p class="subtext" style="margin-top:1rem;"><strong>The tutors listed in this section operate independently and are not employed by or affiliated with our organisation. Please contact the tutor directly for more information</strong></p>
+    </header>
+
+    <div class="subjects-grid">
+
+      <!-- Class 1: 3D Animation -->
+      <article class="subject-card hover-lift">
+        <img class="class-flyer" src="assets/images/3danimationlessons.jpg" alt="3D animation online lesson" style="width:100%; border-radius:14px; margin-bottom:.75rem;">
+        <h3>1-to-1 Zoom 3D Animation Lessons</h3>
+        <p class="subtext"><strong>£20 per session</strong> · Ages 11+</p>
+        <ul>
+          <li>Learn Blender from an industry professional</li>
+          <li>45–60 minute personalised lessons</li>
+          <li>Beginner to advanced mentoring</li>
+          <li>Flexible weekday scheduling</li>
+        </ul>
+        <p class="subtext">
+          Ideal for students passionate about animation, modelling, and digital creativity.
+        </p>
+      </article>
+
+      <!-- Class 2: JKF Classes -->
+      <article class="subject-card hover-lift">
+        <img class="class-flyer" src="assets/images/jfk-classes.jpg" alt="JKF online classes timetable" style="width:100%; border-radius:14px; margin-bottom:.75rem;">
+        <h3>JKF Group Classes (KS1–KS4)</h3>
+        <p class="subtext"><strong>£3 per class</strong> · Ages 5–16</p>
+        <ul>
+          <li>Maths, Science & ICT across Key Stages</li>
+          <li>Small group online sessions</li>
+          <li>Recorded lessons if you miss a class</li>
+          <li>Structured timetable during term time</li>
+        </ul>
+        <p class="subtext">
+          Affordable curriculum-based learning to support progress in core subjects.
+        </p>
+      </article>
+
+      <!-- Class 3: JB Online Tutoring -->
+      <article class="subject-card hover-lift">
+        <img class="class-flyer"src="assets/images/jbonlinetutoring.jpg" alt="JB online tutoring lesson" style="width:100%; border-radius:14px; margin-bottom:.75rem;">
+        <h3>JB Online Tutoring</h3>
+        <p class="subtext"><strong>£3 per class</strong> · KS1–KS4 & IGCSE</p>
+        <ul>
+          <li>English, Maths, Science & Humanities</li>
+          <li>Separate classes by age group</li>
+          <li>Friendly teachers & relaxed environment</li>
+          <li>Recorded sessions available</li>
+        </ul>
+        <p class="subtext">
+          Fun, supportive online lessons focused on confidence and understanding.
+        </p>
+      </article>
+
+    </div>
+
+  </div>
+</main>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <!-- Brand / blurb -->
+    <div>
+      <a class="footer-brand" href="home.html">
+        <img src="assets/images/smartstart-logo.jpg" alt="SmartStart logo">
+        <span>SmartStart</span>
+      </a>
+      <p class="footer-text">
+        Personalised home education—live classes and flexible resources to fit your family.
+      </p>
+    </div>
+
+    <!-- Explore -->
+    <div>
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="class-essentials.html">Age Groups & Subjects explained</a></li>
+        <li><a href="timetable-and-calendar.html">Timetable &amp; Calendar</a></li>
+        <li><a href="courses-of-interest.html">Courses of Interest</a></li>
+      </ul>
+    </div>
+
+    <!-- Support -->
+    <div>
+      <h3>Support</h3>
+      <ul>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+
+      </ul>
+    </div>
+
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <div>© <span id="year"></span> SMARTSTART</div>
+      <nav aria-label="Legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
